@@ -1,0 +1,60 @@
+body {
+  background: linear-gradient(135deg, #0f0f0f, #1e2e2e);
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.stopwatch {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.buttons button {
+  margin: 0 10px;
+  padding: 12px 25px;
+  font-size: 1em;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  background: #333;
+  color: white;
+  transition: background 0.3s ease;
+}
+
+.buttons button:hover {
+  background: #555;
+}
+
+.laps {
+  margin-top: 20px;
+  max-height: 200px;
+  overflow-y: auto;
+  padding-left: 0;
+  list-style: none;
+}
+
+.laps li {
+  background: #111;
+  margin-bottom: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.laps li:hover {
+  transform: scale(1.02);
+  background: #333;
+}
